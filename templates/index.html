@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Comments Page</title>
+        <link rel="stylesheet" type="text/css" href="/static/index.css" />
+    </head>
+    <body>
+        <form method="POST">
+            <textarea name="comment"></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <div class="title">Comments</div>
+       {{ range . }}
+       <div>{{ . }}</div>
+       {{ end }}
+    </body>
+</html>
