@@ -1,0 +1,18 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+func main() {
+
+	fmt.Println("ankit malik")
+
+	ank := make(map[string]string)
+	ank["f"] = "first"
+	ank["s"] = "second"
+
+	rt, _ := json.Marshal(ank)
+	fmt.Println(string(rt))
+}
